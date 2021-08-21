@@ -25,49 +25,50 @@
                         <p class="my-4">Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and 16-core Neural Engine. Thanks to a more advanced thermal design, the Intel Core i9 processor with up to 8 cores and 16 threads of processing power sustains higher performance for longer periods of time — and delivers up to 2.1 times the performance of a quad-core MacBook Pro.</p>
                         <h3>Memory</h3>
                         <div class="d-grid gap-2 d-md-block my-4">
-                            <button class="btn btn-primary btn-lg " type="button">8GB unified memory
+                            <button id="memory-eight-button" class="btn btn-primary btn-lg " type="button">8GB unified memory
                             </button>
-                            <button class="btn btn-primary btn-lg mx-3" type="button">16GB unified memory
+                            <button id="memory-sixteen-button" class="btn btn-primary btn-lg mx-3" type="button">16GB unified memory
                             </button>
                         </div>
                         <h3>Storage</h3>
                         <div class="d-grid gap-5 d-md-block my-4">
-                            <button class="btn btn-primary btn-lg" type="button" >256GB SSD storage
+                            <button id="storage-small-button" class="btn btn-primary btn-lg" type="button" >256GB SSD storage
                             </button>
-                            <button class="btn btn-primary btn-lg mx-3" type="button">512GB SSD storage
-                            <button class="btn btn-primary btn-lg" type="button">1TB SSD storage
+                            <button id="storage-medium-button" class="btn btn-primary btn-lg mx-3"
+                            type="button">512GB SSD storage
+                            <button id="storage-big-button" class="btn btn-primary btn-lg" type="button">1TB SSD storage
                             </button>
                         </div>
                         <h3 class="my-4" >Choose your delivery option</h3>
                         <div class="d-grid gap-1 d-md-block">
-                            <button class="btn btn-primary btn-lg my-3" type="button">Friday,  August 25 FREE Prime Delivery</button>
-                            <button class="btn btn-primary btn-lg" type="button">Friday,  August 21 Delivery Charge $20</button>
+                            <button id="free-shipping" class="btn btn-primary btn-lg my-3" type="button">Friday,  August 25 FREE Prime Delivery</button>
+                            <button id="delivery-charge-shipping" class="btn btn-primary btn-lg" type="button">Friday,  August 21 Delivery Charge $20</button>
                         </div>
                     </div>
                     <table class="table fw-bold my-4 fs-4">
                         <thead>
                           <tr>
                             <th scope="col">Best Price</th>
-                            <th scope="col">$1299</th>
+                            <th scope="col">$<span id="best-price-total">1299</span></th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
                             <td>Extra Memory Cost</td>
-                            <td>$00</td>
+                            <td>$<span id="memory-total">0</span></td>
                           </tr>
                           <tr>
                             <th>Extra Storage Cost</th>
-                            <td>$00</td>
+                            <td>$<span id="storage-total">0</span></td>
                           </tr>
                           <tr class="deliveryStyle">
                             <th>Delivery Charge</th>
                             <hr>
-                            <td>$00</td>
+                            <td>$<span id="delivery-total">0</span></td>
                           </tr>
                           <tr>
                             <th>Total Price</th>
-                            <td>$1299</td>
+                            <td>$<span id="total-price">1299</span></td>
                           </tr>
                         </tbody>
                       </table>
