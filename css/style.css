@@ -1,0 +1,7 @@
+
+.table>:not(:last-child)>:last-child>* {
+   border-bottom-style: none;
+}
+.deliveryStyle{
+    border-bottom: solid;
+}
