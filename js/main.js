@@ -1,7 +1,7 @@
 const memoryTotal = document.getElementById('memory-total');
 const storageTotal = document.getElementById('storage-total');
 const deliveryTotal = document.getElementById('delivery-total')
-
+// get memory
 function memoryCost(id, amount){
     document.getElementById(id).addEventListener('click', function(){
         if (amount == 180) {
@@ -13,7 +13,7 @@ function memoryCost(id, amount){
         total();
     });
 
-}
+};
 
 memoryCost('memory-sixteen-button', 180);
 memoryCost('memory-eight-button', 0);
@@ -23,19 +23,16 @@ function storageCost(id, amount){
     document.getElementById(id).addEventListener('click', function(){
         if (amount == 180) {
             storageTotal.innerText = 180;
-
         }
         else if(amount == 100){
             storageTotal.innerText = 100;
-
         }
         else{
             storageTotal.innerText = 0;
-
         }
         total();
     });
-}
+};
 
 storageCost('storage-small-button', 0);
 storageCost('storage-medium-button', 100);
@@ -52,7 +49,7 @@ function deliveryCost(id, amount){
         }
         total();
     });
-}
+};
 deliveryCost('free-shipping', 0);
 deliveryCost('delivery-charge-shipping', 20);
 // total
@@ -69,7 +66,7 @@ function total(){
     
     grandTotal.innerText = totalCost;
      
-}
+};
 
 // promo code
 document.getElementById('apply-button').addEventListener('click', function(){ 
