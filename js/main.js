@@ -70,26 +70,25 @@ function total(){
     grandTotal.innerText = totalCost;
      
 }
-// promo code
-document.getElementById('apply-button').addEventListener('click', function(){
-    const promoCode = document.getElementById('promo-code');
-    const promoValue = parseFloat (promoCode.value); 
 
-if (promoCode.value == 'stevekaku') {
-        const grandTotal = document.getElementById('grand-total');
+// promo code
+document.getElementById('apply-button').addEventListener('click', function(){ 
+    const promoCode = document.getElementById('promo-code');
+    const promoValue = parseFloat(promoCode.value);
+    
+    if (promoCode.value == 'stevekaku') { 
+        const grandTotal=document.getElementById('grand-total');
         const total = document.getElementById('total-price');
         const totalCost = parseFloat(total.innerText);
-
-        grandTotal.innerText = totalCost/100 * 20;
-        total.innerText = total/100 *20;
-    }
-    else {
-        console.log('nai');
-    }
-    promoCode.value = '';
-});
-//   const promo = (promoCode(totalCost, 20));
-
+        grandTotal.innerText = totalCost - (totalCost/100) * 20;
+        } 
+    else { 
+    console.log('nai'); 
+    } 
+    
+    promoCode.value = ''; 
+        
+}); 
    
 
 
